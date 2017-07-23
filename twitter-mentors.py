@@ -49,12 +49,12 @@ if result['statuses']:
 		#  - Most of the tweets less than ~45 characters aren't about mentorship
 		if (result['statuses'][x]['text'].find('RT ') == -1) and (len(result['statuses'][x]['text']) > 45) :
 			tweets[result['statuses'][x]['id']] = {
-					'text'	: result['statuses'][x]['text'],
+					'text'	: result['statuses'][x]['text'].encode('utf-8'),
 					'user'	: {
 						'id'			: result['statuses'][x]['user']['id'],
-						'name'			: result['statuses'][x]['user']['name'],
-						'profile'		: 'https://twitter.com/' + result['statuses'][x]['user']['screen_name'],
-						'description'	: result['statuses'][x]['user']['description']
+						'name'			: result['statuses'][x]['user']['name'].encode('utf-8'),
+						'profile'		: 'https://twitter.com/' + result['statuses'][x]['user']['screen_name'].encode('utf-8'),
+						'description'	: result['statuses'][x]['user']['description'].encode('utf-8')
 					}
 				}
 
@@ -68,4 +68,4 @@ if result['statuses']:
 			output += make_twitter_link_clickable(escape_text_for_table(tweets[result['statuses'][x]['id']]['text'])) + "|"
 
 with io.open("docs/README.md", "w", encoding="utf-8") as outfile:
-	outfile.write(unicode(output))
+	outfile.write(unicode(output.decode('utf-8')))
