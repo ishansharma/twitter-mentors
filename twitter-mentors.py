@@ -37,8 +37,8 @@ tweets = {}
 # a bit of markdown for README page in /docs
 output = "These results are from a basic Twitter search. Lot of enhancements possible. If you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)"
 
-output += "\n\n|User|Tweet|"
-output += "\n" + "|----|----|"
+output += "\n\n|User|Profile Description|Tweet|"
+output += "\n" + "|----|----|----|"
 
 if result['statuses']:
 	for x in xrange(0,len(result['statuses'])):
@@ -56,7 +56,14 @@ if result['statuses']:
 					}
 				}
 
-			output += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|" + make_twitter_link_clickable(escape_text_for_table(tweets[result['statuses'][x]['id']]['text'])) + "|"
+			# add username + profile link
+			output += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|"
+
+			# add the description
+			output += escape_text_for_table(tweets[result['statuses'][x]['id']]['user']['description']) + "|"
+
+			# add tweet
+			output += make_twitter_link_clickable(escape_text_for_table(tweets[result['statuses'][x]['id']]['text'])) + "|"
 
 with io.open("docs/README.md", "w", encoding="utf-8") as outfile:
 	outfile.write(unicode(output))
