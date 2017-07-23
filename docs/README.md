@@ -2,6 +2,9 @@ These results are from a basic Twitter search. Lot of enhancements possible. If 
 
 |User|Tweet|
 |----|----|
+[Thijs Niks 🇳🇱](https://twitter.com/ThijsNiks)|Hello 👋 Happy to talk about product management, working in an European office of a Silicon Valley tech company, and… https://t.co/i0w9JQjcK8|
+[whimsy.](https://twitter.com/ladywhimsy)|I’m really good at presenting complex information simply, and using/teaching iOS, macOS, tvOS, and watchOS! https://t.co/PjBBRHEWEv|
+[Jenny (Key) Nguyen](https://twitter.com/knockycode)|I'm 7 months in on-and-off in learning Ruby on Rails, Minitest, and Git Desktop/commands on Mac OS. Feel free to DM… https://t.co/SlRo3CL1Ks|
 [K. Louise Medeiros](https://twitter.com/kaelen_medeiros)|Always happy to answer questions about biostats, intermediate R, learning resources, and things that have worked fo… https://t.co/x3bcyX1C2t|
 [Marc Gear](https://twitter.com/marcgear)|Been paid to write code, and helped others do the same for 15 years. Hired people at all levels and done 'agile' in… https://t.co/pHVF9GWgNt|
 [Michael DeHaan](https://twitter.com/laserllama)|Have a question about anything?DM's open. https://t.co/kNQAZs9NtM|
@@ -51,9 +54,3 @@ Flipside: ISO people to answer… https://t.co/gimfuVIRpy|
 [Marco Botto](https://twitter.com/elboman)|I'm a front end dev working with JavaScript and also do open source stuff. Always happy to help! https://t.co/CrbU8YAE8V|
 [Ekaitz Zárraga](https://twitter.com/ekaitz_zarraga)|I'm running my own Ethical Innovation company. I'm a R&amp;D guy so I know many stuff I don't even remember and I'm not… https://t.co/crm1Fle88n|
 [David Meza](https://twitter.com/davidmeza1)|I set aside a couple hours a week. Knowledge Architecture, R, graph DB, strategy. Reach out. https://t.co/9BhLWCiYHD|
-[Noam Chitayat](https://twitter.com/_Noam)|Good advice! I'm always happy to answer questions about C++, JavaScript (Node, React, Backbone), and code/architect… https://t.co/djtUP0chqo|
-[Thomas Rayner](https://twitter.com/MrThomasRayner)|Let's talk PowerShell, IT automation, and about DevOps! https://t.co/6RGHTmDnZJ|
-[William Pettersson](https://twitter.com/WillPettersson)|Happy to talk optimisation, complexity and algorithms with people, I might not have all the answers but I will try 😊 https://t.co/fwJG78bmp5|
-[Erik Riedel](https://twitter.com/er1p)|long time eng leader; conf go-er, speaker, organizer; straddle academic &amp; industry; intersect hardware &amp; software;… https://t.co/cZGisrHUgW|
-[Joe L. Wroten](https://twitter.com/SharpShark28)|Chat with me anytime about avoiding burnout, career advice, public speaking, #javascript  &amp; #css. https://t.co/nmV2NvPaRg|
-[Alex Mole](https://twitter.com/TheRealMolen)|I'm always happy to talk! I'm a pretty experienced game coder (C++, C#), done a bunch of web dev (JS, node, DBs), o… https://t.co/wW6GKKgFuG|

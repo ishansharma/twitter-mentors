@@ -1,5 +1,5 @@
 from twitter import *
-import io, json, yaml
+import io, json, string, yaml
 
 with open("twitter-config.yml", "r") as configfile:
 	config = yaml.load(configfile)
@@ -13,9 +13,11 @@ result = t.search.tweets(q="https://twitter.com/sehurlburt/status/88900472466966
 # result is a dictionary with 'serach_metadata' and 'statuses' keys
 tweets = {}
 
-# format for markdown table
-table = "|User|Tweet|"
-table += "\n" + "|----|----|"
+# a bit of markdown for README page in /docs
+output = "These results are from a basic Twitter search. Lot of enhancements possible. If you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)"
+
+output += "\n\n|User|Tweet|"
+output += "\n" + "|----|----|"
 
 if result['statuses']:
 	for x in xrange(0,len(result['statuses'])):
@@ -32,7 +34,7 @@ if result['statuses']:
 						'description'	: result['statuses'][x]['user']['description']
 					}
 				}
-			table += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|" + tweets[result['statuses'][x]['id']]['text'] + "|"
+			output += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|" + string.replace(tweets[result['statuses'][x]['id']]['text'], '|', '\|') + "|"
 
 with io.open("docs/README.md", "w", encoding="utf-8") as outfile:
-	outfile.write(unicode(table))
+	outfile.write(unicode(output))
