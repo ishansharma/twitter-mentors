@@ -1,7 +1,13 @@
-These results are from a basic Twitter search. Lot of enhancements possible. If you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)
+This page contains a list of people (along with their tweets) who are willing to help/mentor other programmers. I am working on a searchable index. For now, just do a Ctrl/Cmd + F and see if you can find the tech you want help with.
+
+If you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)
+
+Thanks to [Stephanie Hurlburt](https://twitter.com/sehurlburt/) who [asked people to help](https://twitter.com/sehurlburt/status/889004724669661184)!
+----
 
 |User|Profile Description|Tweet|
 |----|----|----|
+[Rachel🦄Nabors](https://twitter.com/rachelnabors)|Curator: https://t.co/dIkW4wYr4v Founder: https://t.co/HMBCUNHsFs GDE. W3C. Design advocate @MSEdgeDev Tweets my own. Animating the Web forward.|All right. I'll answer your questions for the next half hour or however long this tea lasts. Bring 'em! [https://t.co/tf2Vi5X1lv](https://t.co/tf2Vi5X1lv)|
 [Johnathan Pagnutti](https://twitter.com/jag_pag)|I'm an aspiring generative methods scholar at #UCSC, and plan to bake my way to a Ph.D.  Scholar on @ScholarsPlay (he/him)|I have a pretty funny story about mentorship, actually.  Let's be a dick and do a 'twitter essay'!  So, I got an em… [https://t.co/UCjyXapSgc](https://t.co/UCjyXapSgc)|
 [Russ Bishop](https://twitter.com/xenadu02)|What happens in the Simulator stays in the Simulator.|I can answer Simulator questions (about released and beta. cannot discuss future plans) [https://t.co/SemBVT8M8H](https://t.co/SemBVT8M8H)|
 [Jesse Pate](https://twitter.com/jessedpate)|Chief Architect/Technical Founder at @NuORDER_. I build complex systems, root for the @Dodgers, & go to @TheCoffeeBean too often. Warning: I get political here.|I'm always open to answering questions from new or aspiring developers. Tech ?'s, and can review resumes/provide ad… [https://t.co/n1qVoDsnKU](https://t.co/n1qVoDsnKU)|
@@ -42,4 +48,3 @@ These results are from a basic Twitter search. Lot of enhancements possible. If 
 [Jurie Horneman](https://twitter.com/jurieongames)|Making games since 1991. Into interactive storytelling. Runs https://t.co/1tTISU1hkM. Dutch immigrant in Toronto. Opinions are my own.|I’m open for questions about making games, any level. [https://t.co/6lGYRLquau](https://t.co/6lGYRLquau)|
 [Marc Edwards](https://twitter.com/marcedwards)|Founder and designer at @bjango. Currently building @skala.|Always happy to help with design related questions. [https://t.co/QZouiFZan9](https://t.co/QZouiFZan9)|
 [PepsiPunk](https://twitter.com/Pepsi_Punk)|Scottish video game developer @ Rockstar North. Expect tweets about games, comics, football, ufc and general nonsense.|If anyone wants advice in getting into games industry, or general help with game dev just ask! [https://t.co/5nFjO7FrWt](https://t.co/5nFjO7FrWt)|
-[Ludovic Chabant](https://twitter.com/ludovicchabant)|Software Engineer on @FrostbiteEngine (Cameras & Cinematics). Web developer hobbyist. Occasional artist. https://t.co/9sBRH36EcF ~ https://t.co/BW7TrwaiI8|I opened my DMs for everybody in case you want to ask questions privately. Engine gamedev (cinematics, gameplay cam… [https://t.co/83Ymt5EZkJ](https://t.co/83Ymt5EZkJ)|

@@ -35,7 +35,9 @@ result = t.search.tweets(q="https://twitter.com/sehurlburt/status/88900472466966
 tweets = {}
 
 # a bit of markdown for README page in /docs
-output = "These results are from a basic Twitter search. Lot of enhancements possible. If you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)"
+output = "This page contains a list of people (along with their tweets) who are willing to help/mentor other programmers. I am working on a searchable index. For now, just do a Ctrl/Cmd + F and see if you can find the tech you want help with."
+output += "\n\nIf you notice something wrong or want to be removed, open a GitHub issue or tweet me at [@real_ishan](https://twitter.com/real_ishan)"
+output += "\n\nThanks to [Stephanie Hurlburt](https://twitter.com/sehurlburt/) who [asked people to help](https://twitter.com/sehurlburt/status/889004724669661184)!\n----"
 
 output += "\n\n|User|Profile Description|Tweet|"
 output += "\n" + "|----|----|----|"
