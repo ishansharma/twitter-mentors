@@ -1,8 +1,29 @@
 from twitter import *
-import io, json, string, yaml
+import io, json, re, string, yaml
 
 with open("twitter-config.yml", "r") as configfile:
 	config = yaml.load(configfile)
+
+def escape_text_for_table(text):
+	# first, escape the pipe charactesr. They conflict with table pipes on GH pages
+	text = string.replace(text, '|', '\|')
+
+	# remove new lines, they cause issues as well
+	text = string.replace(text, '\n', ' ')
+
+	return text
+
+# helper function of make_twitter_link_clickable
+def markdown_link(match):
+	groups = match.groups() or ''
+	link = groups[0]
+	
+	return '[{0}]({0})'.format(link)
+
+def make_twitter_link_clickable(text):
+	# The link to tweet is at end of text
+	replaced = re.sub('(https\://t.co/.*)', markdown_link, text)
+	return replaced
 
 t = Twitter(
 	auth=OAuth(config['access_token'], config['access_token_secret'], config['consumer_key'], config['consumer_secret']))
@@ -34,7 +55,8 @@ if result['statuses']:
 						'description'	: result['statuses'][x]['user']['description']
 					}
 				}
-			output += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|" + string.replace(tweets[result['statuses'][x]['id']]['text'], '|', '\|') + "|"
+
+			output += "\n" + "[" + tweets[result['statuses'][x]['id']]['user']['name'] + "](" +  tweets[result['statuses'][x]['id']]['user']['profile'] + ")" + "|" + make_twitter_link_clickable(escape_text_for_table(tweets[result['statuses'][x]['id']]['text'])) + "|"
 
 with io.open("docs/README.md", "w", encoding="utf-8") as outfile:
 	outfile.write(unicode(output))
