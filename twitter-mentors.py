@@ -80,7 +80,8 @@ if result['statuses']:
 			# take the ID of last tweet we had, get everything until that one
 			last_tweet_id = min(tweets.keys())
 			result = t.search.tweets(q="https://twitter.com/sehurlburt/status/889004724669661184", count=100, max_id=last_tweet_id)
-
+else:
+	print "Incorrect result from Twitter"
 
 with io.open("docs/_includes/twitter_table.md", "w", encoding="utf-8") as outfile:
 	outfile.write(unicode(output.decode('utf-8')))
